@@ -11,7 +11,7 @@ import {
 import { SelectableText } from '@astrocoders/react-native-selectable-text';
 // import { Container } from './styles';
 
-export default function Reader() {
+export default function Reader({ navigation }) {
 	const [selection, setSelection] = useState({});
 
 	function getDifficultyColor(difficulty) {
