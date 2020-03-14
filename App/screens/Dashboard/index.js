@@ -19,6 +19,16 @@ export default function Dashboard({ navigation }) {
 				<Card title="Lorem" />
 			</View>
 			<Card title="Lorem" />
+			<Text style={{ fontSize: 20, fontFamily: 'Montserrat-Regular' }}>
+				Test font loaded
+			</Text>
+			<Text style={{ fontSize: 20, fontFamily: 'Montserrat-Medium' }}>
+				Test font loaded
+			</Text>
+			<Text style={{ fontSize: 20, fontFamily: 'Montserrat-Bold' }}>
+				Test font loaded
+			</Text>
+
 			<Player />
 		</View>
 	);
