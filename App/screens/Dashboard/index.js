@@ -1,14 +1,16 @@
 import React from 'react';
-import { View, Text, Button } from 'react-native';
+import { View, Button } from 'react-native';
 
 import styles from './styles';
-import { Card, Player } from '../../components';
+import { Card, Player, Text } from '../../components';
 
 export default function Dashboard({ navigation }) {
-	const page = 'Dashboard';
+	const page = 'Good evening';
 	return (
 		<View style={styles.container}>
-			<Text style={styles.title}>{page}</Text>
+			<Text fontWeight="bold" style={styles.title}>
+				{page}
+			</Text>
 			<Button
 				color="#AAA"
 				title="Reader"
@@ -19,15 +21,10 @@ export default function Dashboard({ navigation }) {
 				<Card title="Lorem" />
 			</View>
 			<Card title="Lorem" />
-			<Text style={{ fontSize: 20, fontFamily: 'Montserrat-Regular' }}>
-				Test font loaded
-			</Text>
-			<Text style={{ fontSize: 20, fontFamily: 'Montserrat-Medium' }}>
-				Test font loaded
-			</Text>
-			<Text style={{ fontSize: 20, fontFamily: 'Montserrat-Bold' }}>
-				Test font loaded
-			</Text>
+
+			<Text>Test custom font Regular</Text>
+			<Text fontWeight="medium">Test custom font Medium</Text>
+			<Text fontWeight="bold">Test custom font Bold</Text>
 
 			<Player />
 		</View>

@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
 	title: {
 		color: '#FFFFFF',
 		fontSize: 18,
-		alignSelf: 'center',
+		// alignSelf: 'center',
 	},
 });
 

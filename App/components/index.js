@@ -1,3 +1,4 @@
 export { default as Card } from './Card';
 export { default as Player } from './Player';
-// export { default as _Component } from './_Component';
+export { default as Text } from './Text';
+export { default as Icon } from './Icon';

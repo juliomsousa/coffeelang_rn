@@ -1,6 +1,8 @@
 import React from 'react';
-import { View, Text, Image } from 'react-native';
-import icons from '../../assets/images/icons';
+import { View, Text } from 'react-native';
+import { Icon } from '..';
+import iconsMap from '../Icon/iconsMap';
+
 import styles from './styles';
 
 export default function Player() {
@@ -8,7 +10,7 @@ export default function Player() {
 		<View style={styles.container}>
 			<View style={styles.infoContainer}>
 				<View style={styles.songAvatar}>
-					<Image source={icons.music} style={{ height: 16, width: 16 }} />
+					<Icon icon={iconsMap.AssetIcons.music} size={20} />
 				</View>
 				<View style={styles.songInfo}>
 					<Text style={styles.songTitle}>Giant Steps</Text>
@@ -17,13 +19,13 @@ export default function Player() {
 			</View>
 			<View style={styles.controlContainer}>
 				<View style={styles.prevNext}>
-					<Image source={icons.back} style={{ height: 16, width: 16 }} />
+					<Icon icon={iconsMap.AssetIcons.back} size={16} />
 				</View>
 				<View style={styles.playPause}>
-					<Image source={icons.play} style={{ height: 16, width: 16 }} />
+					<Icon icon={iconsMap.AssetIcons.play} size={16} />
 				</View>
 				<View style={styles.prevNext}>
-					<Image source={icons.next} style={{ height: 16, width: 16 }} />
+					<Icon icon={iconsMap.AssetIcons.next} size={16} />
 				</View>
 			</View>
 		</View>
